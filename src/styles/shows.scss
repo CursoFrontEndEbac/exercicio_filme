@@ -1,0 +1,45 @@
+@use 'variaveis';
+
+.shows {
+    
+    justify-content: space-between;
+
+    
+
+    &__list {
+        margin-top: 44px;
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        display: flex;
+        
+
+        
+        
+        &__item {
+            img {
+                max-width: 450px;
+                border-radius: 4px;
+                margin-top: 40px;
+
+                @media (max-width: 768px) {
+                    max-width: 140px;
+                    align-items: center;
+                    margin-left: 12px;
+                    margin-top: 0;
+
+                }
+            }
+
+            
+        }
+    }
+
+
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 20px;
+        }
+
+    }        

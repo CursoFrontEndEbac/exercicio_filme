@@ -1,0 +1,76 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.0vw;
+    min-height: 80vh;
+    background-image: url(../images/percy/percy1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    img {
+        width: 340px;
+        }
+    
+    &__content {
+        max-width: 875px;
+        
+        @media (max-width:768px) {
+            img{
+                max-width: 200px;
+                margin-top: 50px;
+            }
+        }       
+
+        &__info {
+            margin-top: 20px;
+            img{
+                max-width: 25px;
+                
+            }
+            
+            &__age {
+                display: flex;
+                align-items:end;
+                margin-top: 60px;
+                                                                        
+                .text--average {
+                    margin-left: 150px;
+                    
+                @media (max-width:768px) {
+                    display: block;
+                    background-color: aqua;
+                }
+                    
+                }
+                                
+                li.text--big{
+                    margin-top: 20px;
+                }
+
+                li.text {
+                    max-width: 800px;
+                    margin-top: 15px;
+                    margin-bottom: 35px;
+                }
+                
+                @media (max-width:768px) {
+                    display: block;
+                }
+
+                
+            }
+
+        }
+    }
+    
+    .button {
+        margin-top: 2vw;
+        margin-bottom: 20px;
+    }
+
+    
+}
+    p {
+            margin-bottom: 15px;
+    }
+        
